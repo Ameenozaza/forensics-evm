@@ -1,0 +1,12 @@
+scenario,detected,time_ms,note
+T1,True,0,artifact bytes altered
+T2,True,0,metadata hash altered
+T3,True,0,direct file edit: hash chain break detected
+T4,True,0,record survives artifact deletion (design limit)
+T5,True,0,timestamp cannot be backdated after the fact
+T6,False,0,no role model: any key can sign (design limit)
+G1,True,0,prev_hash does not resolve
+G2,,,not representable: ids sequential
+G3,True,0,actor bound into signed payload
+G4,False,0,"threshold=3600s, observed=0.0s"
+G5,,,not representable: no access log

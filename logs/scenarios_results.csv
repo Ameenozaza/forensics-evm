@@ -1,0 +1,12 @@
+scenario,detected,time_ms,note
+T1,true,5,"artifact bytes altered"
+T2,true,3,"metadata hash altered"
+T3,null,null,"not representable: direct ledger edit requires privileged access to the node's state; recorded as a design limit"
+T4,true,0,"artifact deletion; on-chain record survives (design limit: chain records existence, not availability)"
+T5,false,0,"timestamp uses block.timestamp; caller cannot backdate"
+T6,false,24,"no role enforcement in this contract: unauthorized signer succeeded; design limit"
+G1,true,0,"prevHash does not resolve to a known entry -> gap detected"
+G2,null,null,"not representable: contract assigns id sequentially; holes cannot occur"
+G3,true,0,"actor bound into entryHash; inconsistent holder produces different hash"
+G4,false,0,"threshold=3600s; observed gap=1s; in a real case, a gap above threshold must be flagged by the report generator"
+G5,null,null,"not representable: no access-log layer in this contract; recorded as a design limit"
