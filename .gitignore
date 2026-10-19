@@ -29,3 +29,6 @@
 
 # Snapshot cheatcodes output
 /snapshots
+
+logs/baseline_b_log.jsonl
+logs/baseline_b_log.jsonl.tampered
